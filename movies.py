@@ -23,6 +23,7 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
             "pupella maggio",
             "armando drancia",
         ],  # actors/actresses
+        "7.9/10 on IMDB",
     ),
     (
         "the big easy",
@@ -36,6 +37,7 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
             "john goodman",
             "charles ludlam",
         ],
+        "6.5/10 on IMDB",
     ),
     (
         "boyz n the hood",
@@ -48,6 +50,7 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
             "tyra ferrell",
             "morris chestnut",
         ],
+        "7.8/10 on IMDB",
     ),
     (
         "dead again",
@@ -60,18 +63,21 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
             "derek jacobi",
             "hanna schygulla",
         ],
+        "6.8 on IMDB",
     ),
     (
         "the godfather",
         "francis ford coppola",
         1972,
         ["marlon brando", "al pacino", "james caan", "robert duvall", "diane keaton"],
+        "9.2/10 on IMDB",
     ),
     (
         "an american in paris",
         "vincente minnelli",
         1952,
         ["gene kelley", "leslie caron", "oscar levant", "nina foch", "george guetary"],
+        "7.2/10 on IMDB",
     ),
     (
         "casablanca",
@@ -88,6 +94,7 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
             "conrad veidt",
             "dooley wilson",
         ],
+        "8.5 on IMDB",
     ),
     (
         "citizen kane",
