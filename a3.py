@@ -148,8 +148,6 @@ def title_by_director(matches: List[str]) -> List[str]:
         if str(matches[0]) == get_director(movie):
             results.append(get_title(movie))
     return results
-    
-
 
 def actors_by_title(matches: List[str]) -> List[str]:
     """Finds actors who acted in the passed in movie title
@@ -165,9 +163,6 @@ def actors_by_title(matches: List[str]) -> List[str]:
         if str(matches[0]) == get_title(movie):
             results.extend(sorted(get_actors(movie)))
     return results
-    
-
-
 
 def year_by_title(matches: List[str]) -> List[int]:
     """Finds year of passed in movie title
@@ -182,7 +177,6 @@ def year_by_title(matches: List[str]) -> List[int]:
         if str(matches[0]) == get_title(movie):
             results.append(get_year(movie))
     return results
-    
 
 def title_by_actor(matches: List[str]) -> List[str]:
     """Finds titles of all movies that the given actor was in
@@ -230,10 +224,30 @@ def info_by_title(matches: List[str]) -> List[str]:
             results.append([get_title(movie), get_director(movie), get_year(movie), get_actors(movie), get_rating(movie)])
     return results
 
+def highest_rating_by_actor(matches: List[str]) -> List[str]:
+    """
+    """
+    results = []
+    for movie in movie_db:
+        if matches[0] in get_actors(movie):
+            results.append(get_rating(movie))
+
+    highest_rating = 0
+    for result in results:
+        rating = []
+        for _ in range(3):
+            rating.append(result)
+        rating = "".join(rating)
+
+        new_rating = float(rating)
+
+        if new_rating > highest_rating:
+            highest_rating = new_rating
+    return [str(highest_rating)]
+
 # dummy argument is ignored and doesn't matter
 def bye_action(dummy: List[str]) -> None:
     raise KeyboardInterrupt
-
 
 # The pattern-action list for the natural language query system A list of tuples of
 # pattern and action It must be declared here, after all of the function definitions
@@ -242,24 +256,17 @@ pa_list: List[Tuple[List[str], Callable[[List[str]], List[Any]]]] = [
     (str.split("what movies were made between _ and _"), title_by_year_range),
     (str.split("what movies were made before _"), title_before_year),
     (str.split("what movies were made after _"), title_after_year),
-  
-    # note there are two valid patterns here two different ways to ask for the director
-    # of a movie
     (str.split("who was in %"), actors_by_title),
-    
     (str.split("who directed %"), director_by_title),
     (str.split("who was the director of %"), director_by_title),
     (str.split("what movies were directed by %"), title_by_director),
     (str.split("who acted in %"), actors_by_title),
     (str.split("when was % made"), year_by_title),
     (str.split("in what movies did % appear"), title_by_actor),
-
     (str.split("what is the rating of %"), rating_by_title),
     (str.split("what is the info of %"), info_by_title),
-
     (["bye"], bye_action),
 ]
-
 
 def search_pa_list(src: List[str]) -> List[str]:
     """Takes source, finds matching pattern and calls corresponding action. If it finds
@@ -274,7 +281,6 @@ def search_pa_list(src: List[str]) -> List[str]:
         ["No answers"] if it finds a match but no answers
     """
     
-    
     for pat, act in pa_list:
         mat = match(pat,src)
         if mat is not None:
@@ -282,9 +288,6 @@ def search_pa_list(src: List[str]) -> List[str]:
             return ans if ans else["no answers"]
     
     return ["I don't understand"]
-
-
-
 
 def query_loop() -> None:
     """The simple query loop. The try/except structure is to catch Ctrl-C or Ctrl-D
@@ -304,10 +307,6 @@ def query_loop() -> None:
 
     print("\nSo long!\n")
 
-
-# uncomment the following line once you've written all of your code and are ready to try
-# it out. Before running the following line, you should make sure that your code passes
-# the existing asserts.
 query_loop()
 
 if __name__ == "__main__":
