@@ -34,10 +34,11 @@ def get_director(movie: Tuple[str, str, int, List[str]]) -> str:
 def get_year(movie: Tuple[str, str, int, List[str]]) -> int:
     return movie[2]
 
-
 def get_actors(movie: Tuple[str, str, int, List[str]]) -> List[str]:
     return movie[3]
 
+def get_rating(movie: Tuple[str, str, int, List[str]]) -> str:
+    return movie[4]
 
 # Below are a set of actions. Each takes a list argument and returns a list of answers
 # according to the action and the argument. It is important that each function returns a
@@ -198,7 +199,20 @@ def title_by_actor(matches: List[str]) -> List[str]:
             results.append(get_title(movie))
     return results
 
+def rating_by_title(matches: List[str]) -> List[str]:
+    """Finds the rating of the given movie
+    
+    Args:
+        matches - a list of 1 string, just the title
 
+    Returns:
+        a list of one item (str), the rating of the movie
+    """
+    results = []
+    for movie in movie_db:
+        if get_title(movie) == matches[0]:
+            results.append(get_rating(movie))
+    return results
 
 # dummy argument is ignored and doesn't matter
 def bye_action(dummy: List[str]) -> None:
