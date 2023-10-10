@@ -214,6 +214,22 @@ def rating_by_title(matches: List[str]) -> List[str]:
             results.append(get_rating(movie))
     return results
 
+def info_by_title(matches: List[str]) -> List[str]:
+    """Finds the info based on the given movie
+    
+    Args:
+        matches - a list of 1 string, just the title
+
+    Returns:
+        a list of info (strings), everything about the movie in the database
+    """
+
+    results = []
+    for movie in movie_db:
+        if get_title(movie) == matches[0]:
+            results.append([get_title(movie), get_director(movie), get_year(movie), get_actors(movie), get_rating(movie)])
+    return results
+
 # dummy argument is ignored and doesn't matter
 def bye_action(dummy: List[str]) -> None:
     raise KeyboardInterrupt
