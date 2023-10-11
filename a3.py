@@ -225,25 +225,24 @@ def info_by_title(matches: List[str]) -> List[str]:
     return results
 
 def highest_rating_by_actor(matches: List[str]) -> List[str]:
+    """Finds the highest rated film that a actor was in
+
+    Args:
+        matches - a list of 1 string, just the actor
+
+    Returns:
+        a list of rating (1 float), rating of the best movie that the actors was in
     """
-    """
-    results = []
+    str_rating = str()
+    highest_rating = 0
     for movie in movie_db:
         if matches[0] in get_actors(movie):
-            results.append(get_rating(movie))
+            str_rating = get_rating(movie)
+            new_rating = float("".join(str_rating[:3]))
 
-    highest_rating = 0
-    for result in results:
-        rating = []
-        for _ in range(3):
-            rating.append(result)
-        rating = "".join(rating)
-
-        new_rating = float(rating)
-
-        if new_rating > highest_rating:
-            highest_rating = new_rating
-    return [str(highest_rating)]
+            if new_rating > highest_rating:
+                highest_rating = new_rating
+    return [f"{highest_rating}/10 on IMDB"]
 
 # dummy argument is ignored and doesn't matter
 def bye_action(dummy: List[str]) -> None:
