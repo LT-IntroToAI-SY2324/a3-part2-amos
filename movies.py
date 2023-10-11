@@ -12,7 +12,7 @@
 # `[(title, director, year, [actress_one, actor_two, ...]), ...]`
 from typing import List, Tuple
 
-movie_db: List[Tuple[str, str, int, List[str]]] = [
+movie_db: List[Tuple[str, str, int, List[str], str]] = [
     (
         "amarcord",  # title
         "federico fellini",  # director
@@ -333,7 +333,12 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
         "the dresser",
         "peter yates",
         1984,
-        ["albert finney", "tom courtenay", "edward fox", "zena walker"],
+        [
+            "albert finney", 
+            "tom courtenay", 
+            "edward fox", 
+            "zena walker",
+        ],
         "7.5 on IMDB",
     ),
     (
@@ -466,7 +471,7 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
             "michael caine",
             "aaron eckhart",
             "morgan freeman",
-        ]
+        ],
         "9 on IMDB",
     ),
     (
@@ -492,7 +497,7 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
             "robert de niro",
             "lily gladstone",
             "jesse plemons",
-        ]
+        ],
         "9 on IMDB",
 
     ),
@@ -507,8 +512,6 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
             "john lithgow",
         ],
         "8.7 on IMDB",
-
-
     ),
     (
         "oppenheimer",
@@ -521,7 +524,6 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
             "robert downey jr",
         ],
         "8.5 on IMDB",
-
     ),
     (
         "the wolf of wall street",
@@ -550,37 +552,37 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
         "8 on IMDB",
 
     ),
-    (
-        "the nightmare before christmas",
-        "henry selick",
+    # (
+    #     "the nightmare before christmas",
+    #     "henry selick",
 
-    ),
-    (
-
-
-    ),
-    (
+    # ),
+    # (
 
 
-    ),
-    (
+    # ),
+    # (
 
 
-    ),
-    (
+    # ),
+    # (
 
 
-    ),
-    (
+    # ),
+    # (
 
 
-    ),
-    (
+    # ),
+    # (
 
 
-    ),
-    (
+    # ),
+    # (
 
 
-    )
+    # ),
+    # (
+
+
+    # ),
 ]
