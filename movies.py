@@ -109,6 +109,7 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
             "agnes moorehead",
             "ruth warrick",
         ],
+        "8.3 on IMDB",
     ),
     (
         "gone with the wind",
@@ -122,6 +123,7 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
             "hattie mcdaniel",
             "butterfly mcqueen",
         ],
+        "8.2 on IMDB",
     ),
     (
         "lawrence of arabia",
@@ -139,6 +141,7 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
             "arthur kennedy",
             "donald wolfit",
         ],
+        "8.3 on IMDB",
     ),
     (
         "the manchurian candidate",
@@ -156,6 +159,7 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
             "khigh dhiegh",
             "james edwards",
         ],
+        "7.9 on IMDB",
     ),
     (
         "metropolis",
@@ -168,6 +172,7 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
             "rudolf kleinrogge",
             "heinrich george",
         ],
+        "8.3 on IMDB",
     ),
     (
         "othello",
@@ -182,6 +187,7 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
             "doris dowling",
             "michael laurence",
         ],
+        "7.5 on IMDB",
     ),
     (
         "spartacus",
@@ -197,6 +203,7 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
             "tony curtis",
             "woody strode",
         ],
+        "7.9 on IMDB",
     ),
     (
         "a star is born",
@@ -209,12 +216,14 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
             "tommy noonan",
             "charles bickford",
         ],
+        "7.5 on IMDB",
     ),
     (
         "after the rehearsal",
         "ingmar bergman",
         1984,
         ["erland josephson", "ingrid thulin", "lena olin", "nadja palmstjerna-weiss"],
+        "7.1 on IMDB",
     ),
     (
         "amadeus",
@@ -229,6 +238,7 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
             "christine ebersole",
             "jeffrey jones",
         ],
+        "8.4 on IMDB",
     ),
     (
         "blood simple",
@@ -241,6 +251,7 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
             "m emmet walsh",
             "samm-art williams",
         ],
+        "7.6 on IMDB",
     ),
     (
         "chinatown",
@@ -256,6 +267,7 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
             "diane ladd",
             "roman polanski",
         ],
+        "8.3 on IMDB",
     ),
     (
         "the cotton club",
@@ -270,6 +282,7 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
             "james remar",
             "fred gwynne",
         ],
+        "6.5 on IMDB",
     ),
     (
         "the crying game",
@@ -284,6 +297,7 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
             "breffini mckenna",
             "joe savino",
         ],
+        "7.2 on IMDB",
     ),
     (
         "the day of the jackal",
@@ -299,6 +313,7 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
             "olga georges-picot",
             "cyril cusack",
         ],
+        "7.8 on IMDB",
     ),
     (
         "diva",
@@ -312,12 +327,14 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
             "jacques fabbri",
             "chantal deruaz",
         ],
+        "7.2 on IMDB",
     ),
     (
         "the dresser",
         "peter yates",
         1984,
         ["albert finney", "tom courtenay", "edward fox", "zena walker"],
+        "7.5 on IMDB",
     ),
     (
         "el norte",
@@ -330,6 +347,7 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
             "alicia del lago",
             "trinidad silva",
         ],
+        "7.7 on IMDB",
     ),
     (
         "the exorcist",
@@ -343,6 +361,7 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
             "kitty winn",
             "lee j cobb",
         ],
+        "8.1 on IMDB",
     ),
     (
         "a fish called wanda",
@@ -357,6 +376,7 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
             "tom georgeson",
             "patricia hayes",
         ],
+        "7.5 on IMDB",
     ),
     (
         "flirting",
@@ -371,8 +391,9 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
             "josh picker",
             "kiri paramore",
         ],
+        "7.1 on IMDB",
     ),
-    ("gates of heaven", "errol morris", 1978, []),
+    ("gates of heaven", "errol morris", 1978, [], "7.3 on IMDB"),
     (
         "house of games",
         "david mamet",
@@ -385,12 +406,14 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
             "j t walsh",
             "jack wallace",
         ],
+        "7.2 on IMDB",
     ),
     (
         "iceman",
         "fred schepisi",
         1984,
         ["timothy hutton", "john lone", "lindsay crouse"],
+        "6.1 on IMDB",
     ),
     (
         "jaws",
@@ -403,6 +426,7 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
             "lorraine gary",
             "murray hamilton",
         ],
+        "8.1 on IMDB",
     ),
     (
         "johnny got his gun",
@@ -416,6 +440,7 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
             "donald sutherland",
             "eduard franz",
         ],
+        "7.8 on IMDB",
     ),
     (
         "local hero",
@@ -428,6 +453,7 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
             "fulton mckay",
             "denis lawson",
         ],
+        "7.3 on IMDB",
     ),
     (
         "the dark knight",
@@ -441,6 +467,7 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
             "aaron eckhart",
             "morgan freeman",
         ]
+        "9 on IMDB",
     ),
     (
         "malcolm x",
@@ -454,5 +481,106 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
             "delroy lindo",
             "spike lee",
         ],
+        "7.7 on IMDB",
+    ),
+    (
+        "killers of the flower moon",
+        "martin scorsese",
+        2023,
+        [
+            "leonardo dicaprio",
+            "robert de niro",
+            "lily gladstone",
+            "jesse plemons",
+        ]
+        "9 on IMDB",
+
+    ),
+    (
+        "interstellar",
+        "christopher nolan",
+        2014,
+        [
+            "matthew mcconaughey",
+            "anne hathaway",
+            "jessica chastain",
+            "john lithgow",
+        ],
+        "8.7 on IMDB",
+
+
+    ),
+    (
+        "oppenheimer",
+        "christopher nolan",
+        2023,
+        [
+            "cillian murphy",
+            "emily blunt",
+            "matt damon",
+            "robert downey jr",
+        ],
+        "8.5 on IMDB",
+
+    ),
+    (
+        "the wolf of wall street",
+        "martin scorsese",
+        2013,
+        [
+            "leonardo dicaprio",
+            "margot robbie",
+            "jonah hill",
+            "matthew mcconaughey",
+        ],
+        "8.2 on IMDB",
+        
+    
+    ),
+    (
+        "dune",
+        "denis villeneuve",
+        2021,
+        [
+            "timothee chalamet",
+            "oscar issac",
+            "zendaya",
+            "jason momoa",
+        ],
+        "8 on IMDB",
+
+    ),
+    (
+        "the nightmare before christmas",
+        "henry selick",
+
+    ),
+    (
+
+
+    ),
+    (
+
+
+    ),
+    (
+
+
+    ),
+    (
+
+
+    ),
+    (
+
+
+    ),
+    (
+
+
+    ),
+    (
+
+
     )
 ]
