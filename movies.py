@@ -12,7 +12,7 @@
 # `[(title, director, year, [actress_one, actor_two, ...]), ...]`
 from typing import List, Tuple
 
-movie_db: List[Tuple[str, str, int, List[str]]] = [
+movie_db: List[Tuple[str, str, int, List[str], str]] = [
     (
         "amarcord",  # title
         "federico fellini",  # director
@@ -24,6 +24,42 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
             "armando drancia",
         ],  # actors/actresses
         "7.9/10 on IMDB",
+    ),
+    (
+        "the good, the bad, and the ugly",
+        "sergio leone",
+        1966,
+        [
+            "clint eastwood",
+            "eli wallach",
+            "lee van cleef",
+        ],
+        "8.8/10 on IMDB",
+    ),
+    (
+        "halloween",
+        "john carpenter",
+        1978,
+        [
+            "donald pleasance",
+            "jamie lee curtis",
+            "tony moran",
+            "nancy kyes",
+            "charles cyphers",
+        ],
+        "7.7/10 on IMDB",
+    ),
+    (
+        "friday the 13th",
+        "sean s cunningham",
+        1980,
+        [
+            "betsy palmer",
+            "adrienne king",
+            "jeannine taylor",
+            "robbi morgan",
+        ],
+        "6.4/10 on IMDB",
     ),
     (
         "the big easy",
@@ -333,7 +369,12 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
         "the dresser",
         "peter yates",
         1984,
-        ["albert finney", "tom courtenay", "edward fox", "zena walker"],
+        [
+            "albert finney", 
+            "tom courtenay", 
+            "edward fox", 
+            "zena walker",
+        ],
         "7.5 on IMDB",
     ),
     (
@@ -466,7 +507,7 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
             "michael caine",
             "aaron eckhart",
             "morgan freeman",
-        ]
+        ],
         "9 on IMDB",
     ),
     (
@@ -492,7 +533,7 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
             "robert de niro",
             "lily gladstone",
             "jesse plemons",
-        ]
+        ],
         "9 on IMDB",
 
     ),
@@ -507,8 +548,6 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
             "john lithgow",
         ],
         "8.7 on IMDB",
-
-
     ),
     (
         "oppenheimer",
@@ -521,7 +560,6 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
             "robert downey jr",
         ],
         "8.5 on IMDB",
-
     ),
     (
         "the wolf of wall street",
@@ -553,32 +591,6 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
     (
         "the nightmare before christmas",
         "henry selick",
-        1993,
-        [
-            "danny elfman",
-            "chris sarandon",
-            "william hickey",
-            "ken page",
-        ],
-        "7.9 on IMDB",
-
-    ),
-    (
-        "john wick: chapter 4",
-        "chad stahelski",
-        2023,
-        [
-            "keanu reeves",
-            "lawrence fishburne",
-            "lance reddick",
-            "clancy brown",
-            "donnie yen",
-        ],
-        "7.8 on IMDB",
-
-    ),
-    (
-    
 
     ),
     (
@@ -588,17 +600,25 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
     (
 
 
-    ),
-    (
+    # ),
+    # (
 
 
-    ),
-    (
+    # ),
+    # (
 
 
-    ),
-    (
+    # ),
+    # (
 
 
-    )
+    # ),
+    # (
+
+
+    # ),
+    # (
+
+
+    # ),
 ]
