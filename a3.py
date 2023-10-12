@@ -313,7 +313,7 @@ query_loop()
 
 """
 TODO:
-- add 20 movies to database (currently added 7 movies)
+- add 20 movies to database (currently added 23 movies)
 - add at least one more action function (added 3 action functions + 1 projection function)
 - add five more searches to pa_list (added 5)
 
