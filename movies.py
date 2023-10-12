@@ -613,16 +613,52 @@ movie_db: List[Tuple[str, str, int, List[str], str]] = [
         "8 on IMDB",
 
     ),
-    # (
-    #     "the nightmare before christmas",
-    #     "henry selick",
+    (
+        "the nightmare before christmas",
+        "henry selick",
+        1993,
+        [
+            "danny elfman",
+            "chris sarandon",
+            "william hickey",
+            "ken page",
+        ],
+        "7.9 on IMDB",
 
-    # ),
-    # (
+    ),
+    (
+        "john wick: chapter 4",
+        "chad stahelski",
+        2023,
+        [
+            "keanu reeves",
+            "lawrence fishburne",
+            "lance reddick",
+            "clancy brown",
+            "donnie yen",
+        ],
+        "7.8 on IMDB",
+
+    ),
+    (
+    
+
+    ),
+    (
 
 
-    # ),
-    # (
+    ),
+    (
+
+
+    ),
+    (
+
+
+    ),
+    (
+
+
 
 
     # ),
