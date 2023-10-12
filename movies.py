@@ -26,6 +26,42 @@ movie_db: List[Tuple[str, str, int, List[str], str]] = [
         "7.9/10 on IMDB",
     ),
     (
+        "the good, the bad, and the ugly",
+        "sergio leone",
+        1966,
+        [
+            "clint eastwood",
+            "eli wallach",
+            "lee van cleef",
+        ],
+        "8.8/10 on IMDB",
+    ),
+    (
+        "halloween",
+        "john carpenter",
+        1978,
+        [
+            "donald pleasance",
+            "jamie lee curtis",
+            "tony moran",
+            "nancy kyes",
+            "charles cyphers",
+        ],
+        "7.7/10 on IMDB",
+    ),
+    (
+        "friday the 13th",
+        "sean s cunningham",
+        1980,
+        [
+            "betsy palmer",
+            "adrienne king",
+            "jeannine taylor",
+            "robbi morgan",
+        ],
+        "6.4/10 on IMDB",
+    ),
+    (
         "the big easy",
         "jim mcbride",
         1987,
