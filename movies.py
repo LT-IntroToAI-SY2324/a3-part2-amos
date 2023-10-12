@@ -62,6 +62,31 @@ movie_db: List[Tuple[str, str, int, List[str], str]] = [
         "6.4/10 on IMDB",
     ),
     (
+        "e.t. the extra-terrestrial",
+        "steven spielburg",
+        1982,
+        [
+            "henry thomas",
+            "drew barrymore",
+            "peter coyote",
+            "dee wallace",
+            "robert macnaughton"
+        ],
+        "7.9/10 on IMDB",
+    ),
+    (
+        "home alone",
+        "chris columbus",
+        1990,
+        [
+            "macaulay culkin",
+            "joe pesci",
+            "daniel stern",
+            "john heard",
+        ],
+        "7.7/10 on IMDB",
+    ),
+    (
         "the big easy",
         "jim mcbride",
         1987,
