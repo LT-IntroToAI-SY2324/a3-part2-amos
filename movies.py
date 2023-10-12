@@ -651,42 +651,101 @@ movie_db: List[Tuple[str, str, int, List[str], str]] = [
             "bill pullman",
         ],
         "7.2 on IMDB",
-    
-
+    )
+    (
+        "the shawshank redemption",
+        "frank darabont",
+        1994,
+        [
+            "william sadler",
+            "bob gunton",
+            "tim robbins",
+            "morgan freeman",
+        ],
+        "9.3 on IMDB",
     ),
     (
-
-
+        "schindler's list",
+        "steven spielberg",
+        1993,
+        [
+            "liam neeson",
+            "ben kingsley",
+            "ralph fiennes",
+            "caroline goodall",
+        ],
+        "9.0 on IMDB",
     ),
     (
-
-
+        "fight club",
+        "david fincher",
+        1999,
+        [
+            "brad pitt",
+            "meat loaf",
+            "edward norton",
+            "zach grenier",
+        ],
+        "8.8 on IMDB",
     ),
     (
-
-
+        "the matrix",
+        "lana wachowski",
+        1999,
+        [
+            "keanu reeves",
+            "carrie-anne moss",
+            "laurence fishburne",
+            "hugo weaving",
+        ]
+        "8.7 on IMDB",
     ),
-
-
-    # ),
-    # (
-
-
-    # ),
-    # (
-
-
-    # ),
-    # (
-
-
-    # ),
-    # (
-
-
-    # ),
-    # (
-
-
-    # ),
+    (
+        "goodfellas",
+        "martin scorsese",
+        1990,
+        [
+            "robert de niro",
+            "joe pesci",
+            "ray liotta",
+            "lorraine bracco",
+        ]
+        "8.7 on IMDB",
+    ),
+    (
+        "joker",
+        "todd philips",
+        2019
+        [
+            "joaquin phoenix",
+            "zazie beetz",
+            "robert de niro",
+            "frances conroy",
+        ]
+        "8.4 on IMDB",
+    ),
+    (
+        "inception",
+        "christopher nolan",
+        2010
+        [
+            "leonardo dicaprio",
+            "elliot page",
+            "ken watanabe",
+            "joseph gordon-levitt",
+        ]
+        "8.8 on IMDB",
+    ),
+    (
+        "gladiator",
+        "ridley scott",
+        2000
+        [
+            "russel crowe",
+            "connie nielsen",
+            "joaquin phoenix",
+            "oliver reed",
+        ]
+        "8.5 on IMDB",
+    ),
 ]
