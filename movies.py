@@ -616,6 +616,16 @@ movie_db: List[Tuple[str, str, int, List[str], str]] = [
 
     ),
     (
+        "the equalizer",
+        "antoine fuqua",
+        2014,
+        [
+            "denzel washington",
+            "martin csokas",
+            "david harbour",
+            "bill pullman",
+        ],
+        "7.2 on IMDB",
     
 
     ),
@@ -631,9 +641,6 @@ movie_db: List[Tuple[str, str, int, List[str], str]] = [
 
 
     ),
-    (
-
-
 
 
     # ),
