@@ -221,7 +221,7 @@ def info_by_title(matches: List[str]) -> List[str]:
     results = []
     for movie in movie_db:
         if get_title(movie) == matches[0]:
-            results.append([get_title(movie), get_director(movie), get_year(movie), get_actors(movie), get_rating(movie)])
+            results = [get_title(movie), get_director(movie), get_year(movie), get_actors(movie), get_rating(movie)]
     return results
 
 def highest_rating_by_actor(matches: List[str]) -> List[str]:
@@ -242,7 +242,7 @@ def highest_rating_by_actor(matches: List[str]) -> List[str]:
 
             if new_rating > highest_rating:
                 highest_rating = new_rating
-    return [f"{highest_rating} on IMDB"]
+    return [get_title(movie), f"{highest_rating} on IMDB"]
 
 # dummy argument is ignored and doesn't matter
 def bye_action(dummy: List[str]) -> None:
@@ -263,10 +263,10 @@ pa_list: List[Tuple[List[str], Callable[[List[str]], List[Any]]]] = [
     (str.split("when was % made"), year_by_title),
     (str.split("in what movies did % appear"), title_by_actor),
     (str.split("what is the rating of %"), rating_by_title),
-    (str.split("what rating does % have"), rating_by_title)
+    (str.split("what rating does % have"), rating_by_title),
     (str.split("what is the info of %"), info_by_title),
-    (str.split("what is the best film % acted in", highest_rating_by_actor))
-    (str.split("what is the highest rated film % was in"), highest_rating_by_actor)
+    (str.split("what is the best film % acted in"), highest_rating_by_actor),
+    (str.split("what is the highest rated film % acted in"), highest_rating_by_actor),
     (["bye"], bye_action),
 ]
 

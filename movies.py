@@ -651,7 +651,7 @@ movie_db: List[Tuple[str, str, int, List[str], str]] = [
             "bill pullman",
         ],
         "7.2 on IMDB",
-    )
+    ),
     (
         "the shawshank redemption",
         "frank darabont",
@@ -697,7 +697,7 @@ movie_db: List[Tuple[str, str, int, List[str], str]] = [
             "carrie-anne moss",
             "laurence fishburne",
             "hugo weaving",
-        ]
+        ],
         "8.7 on IMDB",
     ),
     (
@@ -709,43 +709,43 @@ movie_db: List[Tuple[str, str, int, List[str], str]] = [
             "joe pesci",
             "ray liotta",
             "lorraine bracco",
-        ]
+        ],
         "8.7 on IMDB",
     ),
     (
         "joker",
         "todd philips",
-        2019
+        2019,
         [
             "joaquin phoenix",
             "zazie beetz",
             "robert de niro",
             "frances conroy",
-        ]
+        ],
         "8.4 on IMDB",
     ),
     (
         "inception",
         "christopher nolan",
-        2010
+        2010,
         [
             "leonardo dicaprio",
             "elliot page",
             "ken watanabe",
             "joseph gordon-levitt",
-        ]
+        ],
         "8.8 on IMDB",
     ),
     (
         "gladiator",
         "ridley scott",
-        2000
+        2000,
         [
             "russel crowe",
             "connie nielsen",
             "joaquin phoenix",
             "oliver reed",
-        ]
+        ],
         "8.5 on IMDB",
     ),
 ]
